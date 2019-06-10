@@ -17,8 +17,8 @@ Plants vs Zombies
 2. Do something with the "on_timeout_complete" function
 + func on_timeout_complete():
     + shoot in an interval:
-        - -> shoot()
-        - -> timer.start()
+        - shoot()
+        - timer.start()
     + set a cooldown to false:
-        - -> cooldown = false
+        - cooldown = false
 
