@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Lane/Lane.gd" type="Script" id=1]
+[ext_resource path="res://Lane/Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Zombies/Zombie Spawner.tscn" type="PackedScene" id=3]
+
+
+
+
+[node name="Lane" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="Tile1" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 50, 50 )
+
+[node name="Tile2" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 150, 50 )
+
+[node name="Tile3" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 250, 50 )
+
+[node name="Tile4" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 350, 50 )
+
+[node name="Tile5" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 650.029, 50 )
+
+[node name="Tile6" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 450.029, 50 )
+
+[node name="Tile7" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 550.029, 50 )
+
+[node name="Tile8" parent="Tiles" instance=ExtResource( 2 )]
+position = Vector2( 750.029, 50 )
+
+[node name="Zombie Spawner" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1040.11, 47.2436 )
+

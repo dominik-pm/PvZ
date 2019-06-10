@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Zombies/Zombie Spawner.gd" type="Script" id=1]
+
+
+[node name="Zombie Spawner" type="Node2D" groups=[
+"Spawner",
+]]
+script = ExtResource( 1 )
+

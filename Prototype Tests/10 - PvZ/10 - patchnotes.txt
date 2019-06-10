@@ -1,0 +1,3 @@
+-fixed planting on one tile twice
+-cant select a plant in the flowershop anymore if you don't have enough sunflowers
+-fixed timer (used the timer class)

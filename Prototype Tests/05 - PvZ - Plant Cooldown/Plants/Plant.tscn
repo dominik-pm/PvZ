@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Plants/Plant.gd" type="Script" id=1]
+
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.717647, 0.188235, 0.188235, 1 )
+
+[sub_resource type="CapsuleMesh" id=3]
+material = SubResource( 2 )
+
+[node name="Plant" type="StaticBody2D"]
+scale = Vector2( 3, 3 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2( 0.0226088, -0.0208282 )
+scale = Vector2( 10, 20 )
+mesh = SubResource( 3 )
+
